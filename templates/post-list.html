@@ -1,7 +1,10 @@
-<ul>
+<ul class="post-list">
     $for(posts)$
         <li>
-            <a href="$url$">$title$</a> - $date$
+          <span class="post-meta">$date$</span>
+          <h2>
+            <a class="post-link" href="$url$">$title$</a>
+          </h2>
         </li>
     $endfor$
 </ul>
